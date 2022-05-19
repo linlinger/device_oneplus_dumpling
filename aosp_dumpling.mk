@@ -22,15 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# Gapps
-#TARGET_BUILD_GAPPS := true
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Bootanimation
-scr_resolution := 1080op5
+TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := aosp_dumpling
+PRODUCT_NAME := blaze_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -47,8 +44,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 TARGET_VENDOR := oneplus
 
- # Quick Tap
+WITH_GAPPS := true
+BLAZE_BUILD_TYPE := UNOFFICIAL
+BLAZE_MAINTAINER := AURORA
 TARGET_SUPPORTS_QUICK_TAP := true
-Elixir_MAINTAINER := MudabbirulSaad
-IS_PHONE := true
-CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_USE_PIXEL_CHARGER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
