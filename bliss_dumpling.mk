@@ -22,15 +22,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Gapps
 #TARGET_BUILD_GAPPS := true
 
 # Bootanimation
-scr_resolution := 1080op5
+TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := aosp_dumpling
+PRODUCT_NAME := bliss_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
