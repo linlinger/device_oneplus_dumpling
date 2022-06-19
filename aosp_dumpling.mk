@@ -24,11 +24,11 @@ $(call inherit-product, device/oneplus/dumpling/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Gapps
-#TARGET_BUILD_GAPPS := true
-
-# Bootanimation
-scr_resolution := 1080op5
+# PixelOS Stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_NAME := aosp_dumpling
 PRODUCT_DEVICE := dumpling
