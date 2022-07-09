@@ -24,12 +24,10 @@ $(call inherit-product, device/oneplus/dumpling/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Gapps
-#TARGET_BUILD_GAPPS := true
+# Pixel Launcher
+$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
 
-# Bootanimation
-scr_resolution := 1080op5
-
+TARGET_BOOT_ANIMATION_RES := 1080
 PRODUCT_NAME := aosp_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
@@ -47,8 +45,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 TARGET_VENDOR := oneplus
 
- # Quick Tap
-TARGET_SUPPORTS_QUICK_TAP := true
-Elixir_MAINTAINER := MudabbirulSaad
 IS_PHONE := true
+TARGET_SUPPORTS_QUICK_TAP := true
 CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ACORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
