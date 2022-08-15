@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_dumpling.mk
+    $(LOCAL_DIR)/syberia_dumpling.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_dumpling-user \
-    aosp_dumpling-userdebug \
-    aosp_dumpling-eng
+    syberia_dumpling-user \
+    syberia_dumpling-userdebug \
+    syberia_dumpling-eng
