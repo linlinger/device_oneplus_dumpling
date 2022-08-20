@@ -22,15 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
-# Gapps
-#TARGET_BUILD_GAPPS := true
+
 
 # Bootanimation
-scr_resolution := 1080op5
+TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := aosp_dumpling
+PRODUCT_NAME := corvus_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -47,8 +46,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 TARGET_VENDOR := oneplus
 
- # Quick Tap
-TARGET_SUPPORTS_QUICK_TAP := true
-Elixir_MAINTAINER := MudabbirulSaad
-IS_PHONE := true
-CUSTOM_BUILD_TYPE := OFFICIAL
+USE_GAPPS=true
+TARGET_INCLUDE_PIXEL_CHARGER := true
