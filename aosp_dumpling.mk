@@ -25,7 +25,7 @@ $(call inherit-product, device/oneplus/dumpling/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Pixel Launcher
-$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+#$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 PRODUCT_NAME := aosp_dumpling
@@ -47,7 +47,7 @@ TARGET_VENDOR := oneplus
 
 IS_PHONE := true
 TARGET_SUPPORTS_QUICK_TAP := true
-CUSTOM_BUILD_TYPE := OFFICIAL
+ELIXIR_BUILD_TYPE := OFFICIAL
 ELIXIR_MAINTAINER := Saad
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_STOCK_ACORE := false
