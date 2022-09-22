@@ -1,17 +1,21 @@
 # Device Tree
 echo "Cloning OnePlus 5T Tree"
-git clone https://github.com/MudabbirulSaad/device_oneplus_dumpling_private -b elixir device/oneplus/dumpling
+rm -rf device/oneplus/dumpling
+git clone https://github.com/MudabbirulSaad/device_oneplus_dumpling -b elixir device/oneplus/dumpling
 echo ""
 
 # Device Tree
 echo "Cloning msm8998-common Tree"
-git clone https://github.com/MudabbirulSaad/device_oneplus_msm8998-common_private -b twelve device/oneplus/msm8998-common
+rm -rf device/oneplus/msm8998-common
+git clone https://github.com/MudabbirulSaad/device_oneplus_msm8998-common -b A13MIX device/oneplus/msm8998-common
 echo ""
 
 echo "Cloning Vendor blobs"
-git clone https://github.com/MudabbirulSaad/vendor_oneplus_dumpcheese_private -b twelve vendor/oneplus
+rm -rf vendor/oneplus
+git clone https://github.com/MudabbirulSaad/vendor_oneplus -b lineage-19.1 vendor/oneplus
 echo ""
 
 echo "Cloning kernel tree"
-git clone https://github.com/MudabbirulSaad/kernel_oneplus_msm8998_private -b twelve kernel/oneplus/msm8998
+rm -rf kernel/oneplus/msm8998
+git clone https://github.com/MudabbirulSaad/kernel_oneplus_msm8998 -b A13 kernel/oneplus/msm8998
 echo ""
