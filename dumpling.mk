@@ -22,13 +22,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+#$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Pixel Launcher
 #$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-PRODUCT_NAME := aosp_dumpling
+PRODUCT_NAME := dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -45,9 +45,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 TARGET_VENDOR := oneplus
 
+# Offical
+CUSTOM_BUILD_TYPE := Official
+
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-ELIXIR_MAINTAINER := Saad 
-ELIXIR_BUILD_TYPE := OFFICIAL
+WITH_GMS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+USE_PIXEL_CHARGER_IMAGES := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+
+BUILD_FINGERPRINT := google/raven/raven:13/TP1A.220905.004/8927612:user/release-keys
