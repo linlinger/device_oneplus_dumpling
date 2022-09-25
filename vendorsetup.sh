@@ -1,7 +1,7 @@
 # Device Tree
 echo "Cloning OnePlus 5T Tree"
-rm -rf device/oneplus/dumpling
-git clone --depth=1 https://github.com/MudabbirulSaad/device_oneplus_dumpling -b elixir device/oneplus/dumpling
+#rm -rf device/oneplus/dumpling
+#git clone --depth=1 https://github.com/MudabbirulSaad/device_oneplus_dumpling -b elixir device/oneplus/dumpling
 echo ""
 
 # Device Tree
