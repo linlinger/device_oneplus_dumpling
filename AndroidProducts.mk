@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_dumpling.mk
+    $(LOCAL_DIR)/xdroid_dumpling.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_dumpling-user \
-    aosp_dumpling-userdebug \
-    aosp_dumpling-eng
+    xdroid_dumpling-user \
+    xdroid_dumpling-userdebug \
+    xdroid_dumpling-eng
