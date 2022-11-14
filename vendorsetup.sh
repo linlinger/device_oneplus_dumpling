@@ -1,7 +1,7 @@
 # Device Tree
 echo "Cloning msm8998-common Tree"
 rm -rf device/oneplus/msm8998-common
-git clone --depth=1 https://github.com/ProjectElixir-Devices/device_oneplus_msm8998-common -b A13ELXR device/oneplus/msm8998-common
+git clone --depth=1 https://github.com/ProjectElixir-Devices/device_oneplus_msm8998-common -b A13 device/oneplus/msm8998-common
 echo ""
 
 echo "Cloning Vendor blobs"
